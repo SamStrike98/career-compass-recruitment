@@ -2,18 +2,16 @@ import React from 'react'
 import Container from './Container'
 import Wave from './Wave'
 
-const ParalaxImage = () => {
+const WhyChooseUs = () => {
     return (
-        <div className='h-[350px] bg-orange-500'>
-            <Wave colour="#f97316" isTop={true} />
+        <div className='bg-green-500 h-[350px]'>
             <Container>
                 <div>
-                    ParalaxImage
+                    ImageSection
                 </div>
             </Container>
-
         </div>
     )
 }
 
-export default ParalaxImage
+export default WhyChooseUs

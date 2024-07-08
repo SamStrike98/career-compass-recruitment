@@ -4,10 +4,12 @@ import Button from './Button'
 
 const Hero = () => {
     return (
-        <div className=' bg-purple-500 w-full h-[350px] flex flex-col'>
+        <div className="w-full pt-[100px] sm:pt-[0px] h-[350px] flex flex-col bg-[url('../public/banner_img.jpg')] bg-center bg-cover bg-blend-luminosity bg-main">
             <Container>
-                <div className='bg-yellow-500 w-full h-full flex flex-row justify-center items-center'>
-                    <Button btnText={"Call To Action"} />
+                <div className='w-full h-full flex flex-row justify-center items-center'>
+                    <h3 className='font-bold text-accent text-4xl bg-main p-4 rounded-md'>
+                        Your Path to Opportunity
+                    </h3>
                 </div>
             </Container>
         </div>

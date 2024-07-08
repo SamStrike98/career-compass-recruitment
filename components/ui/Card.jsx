@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({ size = 'sm' }) => {
+    const sizes = {
+        sm: 'w-[250px] h-[300px]'
+    }
+
     return (
-        <div className='bg-white text-black rounded-md shadow-xl min-h-[150px] min-w-[100px]'>
+        <div className={`${sizes[size]} bg-main text-black rounded-md shadow-xl `}>
 
         </div>
     )
