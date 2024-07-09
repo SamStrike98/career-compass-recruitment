@@ -6,7 +6,7 @@ const Card = ({ size = 'sm' }) => {
     }
 
     return (
-        <div className={`${sizes[size]} bg-main text-black rounded-md shadow-xl `}>
+        <div className={`${sizes[size]} bg-white border-4 border-accent text-black rounded-md shadow-xl `}>
 
         </div>
     )

@@ -2,12 +2,12 @@ import React from 'react'
 import Container from './Container'
 import Card from './ui/card'
 
-const SubscribeSection = () => {
+const Testimonials = () => {
     return (
-        <div className='bg-purple-500 h-[350px]'>
+        <div className='bg-white h-[350px]'>
             <Container>
                 <div>
-                    SubscribeSection
+                    Testimonials
                     <Card />
                 </div>
             </Container>
@@ -15,4 +15,4 @@ const SubscribeSection = () => {
     )
 }
 
-export default SubscribeSection
+export default Testimonials

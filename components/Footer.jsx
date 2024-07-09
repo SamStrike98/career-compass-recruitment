@@ -33,7 +33,7 @@ const links = [
 
 const Footer = () => {
     return (
-        <footer className='bg-green-500 h-[250px]'>
+        <footer className='bg-main h-[250px] text-white'>
             <Container>
                 <div className='flex flex-col w-1/2 h-[250px] items-center justify-center gap-10'>
                     <ul className='w-full flex flex-row justify-evenly'>

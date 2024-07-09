@@ -4,10 +4,10 @@ import Wave from './Wave'
 
 const WhyChooseUs = () => {
     return (
-        <div className='bg-green-500 h-[350px]'>
+        <div className='bg-white h-[350px]'>
             <Container>
                 <div>
-                    ImageSection
+                    Why Choose Us?
                 </div>
             </Container>
         </div>

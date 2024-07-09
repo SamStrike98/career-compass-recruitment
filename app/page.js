@@ -1,11 +1,11 @@
-import BannerSection from "@/components/BannerSection";
+import FeaturedJobs from "@/components/FeaturedJobs";
 import Footer from "@/components/Footer";
 import Headline from "@/components/Headline";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Navbar from "@/components/Navbar";
 import Intro from "@/components/Intro";
-import SubscribeSection from "@/components/SubscribeSection";
+import Testimonials from "@/components/Testimonials";
 import Wave from "@/components/Wave";
 import Image from "next/image";
 
@@ -17,8 +17,8 @@ export default function Home() {
       {/* <Headline /> */}
       <Intro />
       <WhyChooseUs />
-      <BannerSection />
-      <SubscribeSection />
+      <FeaturedJobs />
+      <Testimonials />
       <Footer />
     </main>
   );
