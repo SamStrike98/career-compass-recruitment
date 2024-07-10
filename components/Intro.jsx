@@ -1,16 +1,22 @@
 import React from 'react'
 import Container from './Container'
-import Wave from './Wave'
-import Card from './ui/Card'
+
+import FindJobCard from './ui/FindJobCard'
+import FindCandidatesCard from './ui/FindCandidatesCard'
+import SectionTitle from './SectionTitle'
 
 const Intro = () => {
     return (
-        <div className='bg-main'>
+        <div className='bg-[#f2f2f2] min-h-[500px]'>
             <Container>
-                <div className='w-full flex sm:flex-row flex-col my-5 justify-evenly '>
-                    <Card />
-                    <Card />
+                <div>
+                    <SectionTitle text={"Let's Get Started"} color={'main'} />
+                    <div className='w-full flex sm:flex-row flex-col my-5 justify-evenly items-center gap-4'>
+                        <FindJobCard />
+                        <FindCandidatesCard />
+                    </div>
                 </div>
+
             </Container>
         </div>
     )

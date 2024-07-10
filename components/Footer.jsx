@@ -1,53 +1,30 @@
 'use client'
 
+import AddressSection from './AddressSection'
+import ContactForm from './ContactForm'
 import Container from './Container'
-import Link from 'next/link'
+import Button from './Button'
 
-const links = [
-    {
-        id: 1,
-        title: 'title1',
-        link: '/'
-    },
-    {
-        id: 2,
-        title: 'title2',
-        link: '/'
-    },
-    {
-        id: 3,
-        title: 'title3',
-        link: '/'
-    },
-    {
-        id: 4,
-        title: 'title4',
-        link: '/'
-    },
-    {
-        id: 5,
-        title: 'title5',
-        link: '/'
-    },
-]
 
 const Footer = () => {
     return (
-        <footer className='bg-main h-[250px] text-white'>
+        <footer className='bg-main min-h-[500px] text-white mt-10 py-5'>
             <Container>
-                <div className='flex flex-col w-1/2 h-[250px] items-center justify-center gap-10'>
-                    <ul className='w-full flex flex-row justify-evenly'>
-                        {
-                            links.map(item => (
-                                <Link key={item.id} href={item.link}>{item.title}</Link>
-                            ))
-                        }
-                    </ul>
+                <div className='flex flex-col h-full gap-10 justify-between'>
+                    <div className='flex md:flex-row flex-col items-center justify-center gap-10'>
+                        <ContactForm />
+                        <AddressSection />
+                        <div className='flex flex-col gap-4'>
+                            <Button btnText={'Find Jobs'} textColor='white' color='accent' />
+                            <Button btnText={'Find Candidates'} textColor='accent' color='white' />
+                        </div>
 
+                    </div>
                     <div className='w-full text-center'>
-                        <p>Copyright - Sam Strike Design</p>
+                        <p>Copyright CareerCompass © 2024 | Privacy Policy | Data Protection | Cookie Policy | Sam Strike Design</p>
                     </div>
                 </div>
+
             </Container>
         </footer>
     )

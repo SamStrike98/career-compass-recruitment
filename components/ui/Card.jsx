@@ -1,12 +1,11 @@
-import React from 'react'
 
 const Card = ({ size = 'sm' }) => {
-    const sizes = {
+    const sizesArr = {
         sm: 'w-[250px] h-[300px]'
     }
 
     return (
-        <div className={`${sizes[size]} bg-white border-4 border-accent text-black rounded-md shadow-xl `}>
+        <div className={`${sizesArr[size]} bg-white border-4 border-accent text-black rounded-md shadow-xl `}>
 
         </div>
     )
