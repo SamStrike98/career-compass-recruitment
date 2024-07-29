@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className='bg-main min-h-[500px] text-white mt-10 py-5'>
             <Container>
                 <div className='flex flex-col h-full gap-10 justify-between'>
-                    <div className='flex md:flex-row flex-col items-center justify-center gap-10'>
+                    <div className='flex md:flex-row flex-col items-center justify-center gap-10 px-2'>
                         <ContactForm />
                         <AddressSection />
                         <div className='flex flex-col gap-4'>
